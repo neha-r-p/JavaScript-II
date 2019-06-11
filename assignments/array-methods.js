@@ -88,6 +88,6 @@ let runnerAnnouncement = [];
 runners.forEach(surname => runnerAnnouncement.push(`${surname.last_name} from ${surname.company_name}!`));
 console.log(runnerAnnouncement);
 
-// Problem 3 --how much money total if a rich matched 
+// Problem 3 --how much money total if a rich person matched 
 let matchDonation = runners.map((mostest) => {return mostest.donation*2}).reduce((total, dub) => {return total += dub}, 0);
 console.log(matchDonation);
